@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  gap: 10px;
+
+  .monthPickerButtons {
+    display: flex;
+
+    button {
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+    }
+
+    div {
+      min-width: 120px;
+      text-align: center;
+    }
+  }
+}

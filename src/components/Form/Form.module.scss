@@ -1,0 +1,88 @@
+.container {
+  position: relative;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+  width: 400px;
+  padding: 20px;
+
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: rotate(45deg);
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  .textInputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+  }
+
+  h2, p {
+    margin: 0;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  input, textarea {
+    padding: 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid grey;
+  }
+
+  .dateAndTimeInputs {
+    display: flex;
+    justify-content: space-between;
+
+    input[type="date"], input[type="time"] {
+      width: fit-content;
+    }
+
+    input[type="date"]:required::placeholder, input[type="time"]:required::placeholder {
+      display: none;
+    }
+  }
+
+  .error {
+    border-color: red;
+  }
+
+  .bottomButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+
+    .saveButton, .removeButton {
+      width: fit-content;
+      padding: 8px;
+      border-radius: 4px;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .saveButton {
+      background-color: black;
+    }
+
+    .removeButton {
+      background-color: red;
+
+      .trashIcon {
+        height: 14px;
+        width: 14px;
+      }
+    }
+  }
+}

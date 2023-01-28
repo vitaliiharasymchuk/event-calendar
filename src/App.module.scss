@@ -1,0 +1,19 @@
+.container * {
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.container textarea:focus, input:focus {
+  outline: none;
+}
